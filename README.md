@@ -1,59 +1,60 @@
-# Predicción de la Calidad del Aire en Medellín mediante Machine Learning
+# Air Quality Prediction in Medellín Using Machine Learning
 
-## Descripción del Proyecto
-Este proyecto busca analizar la relación entre las concentraciones de PM2.5 y las variables meteorológicas en Medellín. Mediante técnicas de Machine Learning, se identificaron patrones y tendencias que pueden ayudar a predecir la calidad del aire y formular estrategias de mitigación de la contaminación.
+## Project Description
+This project aims to analyze the relationship between PM2.5 concentrations and meteorological variables in Medellín. Using Machine Learning techniques, patterns and trends were identified to help predict air quality and formulate pollution mitigation strategies.
 
-## Datos Utilizados
-- **Calidad del aire**: Datos históricos de PM2.5 obtenidos de estaciones de monitoreo en Medellín.
-- **Variables meteorológicas**: Temperatura, humedad, velocidad del viento y presión atmosférica.
+## Data Used
+- **Air Quality**: Historical PM2.5 data obtained from monitoring stations in Medellín.
+- **Meteorological Variables**: Temperature, humidity, wind speed, and atmospheric pressure.
 
-Los datos fueron recopilados del **Sistema de Alerta Temprana de Medellín y el Valle de Aburrá (SIATA)**.
+The data was collected from the **Early Warning System of Medellín and the Aburrá Valley (SIATA)**.
 
-## Metodología
-1. **Recolección de datos**: Integración de los datos de contaminación y meteorología.
-2. **Preprocesamiento**:
-   - Limpieza de datos (manejo de valores nulos, unificación de formatos).
-   - Análisis exploratorio para identificar distribuciones y outliers.
-3. **Análisis estadístico**:
-   - Análisis de correlaciones entre variables.
-   - Identificación de patrones estacionales en los niveles de PM2.5.
-4. **Modelado**:
-   - Modelos de regresión (Linear Regression, Random Forest, XGBoost) para predecir concentraciones de PM2.5.
-   - Modelos de clasificación para predecir el Índice de Calidad del Aire (ICA).
+## Methodology
+1. **Data Collection**: Integration of pollution and meteorological data.
+2. **Preprocessing**:
+   - Data cleaning (handling missing values, format unification).
+   - Exploratory analysis to identify distributions and outliers.
+3. **Statistical Analysis**:
+   - Correlation analysis between variables.
+   - Identification of seasonal patterns in PM2.5 levels.
+4. **Modeling**:
+   - Regression models (Linear Regression, Random Forest, XGBoost) to predict PM2.5 concentrations.
+   - Classification models to predict the Air Quality Index (AQI).
 
-## Resultados Clave
-### 1. Correlaciones entre Variables
-Se observó que:
-- La **temperatura** tiene una correlación negativa con PM2.5 (a mayor temperatura, menor contaminación).
-- La **humedad** muestra una correlación positiva con PM2.5.
-- La **velocidad del viento y la presión** tienen menor impacto en la concentración de contaminantes.
+## Key Results
+### 1. Correlations Between Variables
+It was observed that:
+- **Temperature** has a negative correlation with PM2.5 (higher temperature, lower pollution).
+- **Humidity** shows a positive correlation with PM2.5.
+- **Wind speed and pressure** have a lower impact on pollutant concentration.
 
-![Gráfico de Correlaciones](img/correlaciones.png)
+![Correlation Heatmap](img/correlations.png)
 
-### 2. Análisis Temporal
-Se identificaron picos de contaminación en las primeras 12 semanas del año, lo que sugiere la necesidad de medidas preventivas en esos periodos.
+### 2. Temporal Analysis
+Pollution peaks were identified in the first 12 weeks of the year, suggesting the need for preventive measures during these periods.
 
-![Análisis Temporal](img/analisis_semanal.png)
+![Temporal Analysis](img/weekly_analysis.png)
 
-### 3. Predicción del Índice de Calidad del Aire
-Se probaron modelos de clasificación y el mejor resultado se obtuvo con **Decision Tree**, con un **F1-score de 0.89**.
+### 3. Air Quality Index Prediction
+Classification models were tested, and the best result was obtained with **Decision Tree**, achieving an **F1-score of 0.89**.
 
-![Predicción del ICA](img/prediccion_ica.png)
+![AQI Prediction](img/aqi_prediction.png)
 
-## Conclusiones
-- Se confirmó la influencia de las variables meteorológicas en la calidad del aire.
-- La predicción del ICA permite generar alertas tempranas y mejorar la toma de decisiones.
-- Estos modelos pueden aplicarse en zonas sin estaciones de monitoreo, reduciendo costos de implementación.
+## Conclusions
+- The influence of meteorological variables on air quality was confirmed.
+- AQI prediction allows early warnings and improved decision-making.
+- These models can be applied in areas without monitoring stations, reducing implementation costs.
 
-## Autores
+## Authors
 - Alejandro Henao Echeverri
 - Erika Dayana León Quiroga
 - Jhonatan Latorre Sierra
 - Juan Pablo Muñoz Carmona
 - Yerson Alexis Madrid Villada
 
-## Referencias
+## References
 - SIATA (https://siata.gov.co/)
-- Machine Learning y contaminación del aire: https://doi.org/10.1016/j.chemosphere.2022.136353
-- Documentación XGBoost: https://xgboost.readthedocs.io/en/stable/
+- Machine Learning and air pollution: https://doi.org/10.1016/j.chemosphere.2022.136353
+- XGBoost Documentation: https://xgboost.readthedocs.io/en/stable/
+
 
