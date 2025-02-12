@@ -28,17 +28,17 @@ It was observed that:
 - **Humidity** shows a positive correlation with PM2.5.
 - **Wind speed and pressure** have a lower impact on pollutant concentration.
 
-![Correlation Heatmap](img/correlations.png)
+![Correlation Heatmap](img/correlaciones.png)
 
 ### 2. Temporal Analysis
 Pollution peaks were identified in the first 12 weeks of the year, suggesting the need for preventive measures during these periods.
 
-![Temporal Analysis](img/weekly_analysis.png)
+![Temporal Analysis](img/analisis_semanal.png)
 
 ### 3. Air Quality Index Prediction
 Classification models were tested, and the best result was obtained with **Decision Tree**, achieving an **F1-score of 0.89**.
 
-![AQI Prediction](img/aqi_prediction.png)
+![AQI Prediction](img/prediccion_ica.png)
 
 ## Conclusions
 - The influence of meteorological variables on air quality was confirmed.
